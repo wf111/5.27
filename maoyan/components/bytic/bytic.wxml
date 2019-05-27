@@ -1,0 +1,3 @@
+<!--components/bytic/bytic.wxml-->
+<button type="warn" wx:if="{{glo}}">购票</button>
+<button wx:else style="background:skyblue;color:#fff">预售</button>

@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "bytic":"../bytic/bytic"
+  }
+}

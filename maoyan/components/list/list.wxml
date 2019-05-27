@@ -1,0 +1,13 @@
+<!--components/list/list.wxml-->
+<view class="list" bindtap='showDialog'>
+  <image src="{{data.img}}"></image>
+  <view class="middle">
+    <view>{{data.nm}}</view>
+    <view class="fs30">猫眼评分
+      <text>{{data.sc}}</text>
+    </view>
+    <view class="fs30">{{data.desc}}</view>
+    <view class="fs30">{{data.showInfo}}</view>
+  </view>
+  <bytic glo="{{data.globalReleased}}"></bytic>
+</view>

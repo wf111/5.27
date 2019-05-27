@@ -1,0 +1,20 @@
+/* components/list2/list2.wxss */
+
+.key {
+  background: #ebebeb;
+  height: 70rpx;
+  line-height: 70rpx;
+  padding-left: 20rpx;
+}
+
+.ul {
+  padding: 20rpx;
+  font-size: 35rpx;
+  line-height: 50rpx;
+}
+
+.ul view {
+  height: 80rpx;
+  line-height: 80rpx;
+  border-bottom: solid 1rpx #ccc;
+}

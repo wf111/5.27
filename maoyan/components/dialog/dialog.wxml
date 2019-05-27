@@ -1,0 +1,9 @@
+<!--components/dialog/dialog.wxml-->
+<view class="dialog">
+<view class='cls' bindtap='close'>x</view>
+  <view class="mask">
+    <image src="{{data.img}}"></image>
+    <view>{{data.nm}}</view>
+    <view>评分:<text>{{data.sc}}</text></view>
+  </view>
+</view>

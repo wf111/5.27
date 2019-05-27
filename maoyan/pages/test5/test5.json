@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "电影演出赛事",
+  "enablePullDownRefresh": true,
+  "backgroundTextStyle": "dark",
+  "backgroundColor": "#eee",
+  "usingComponents": {
+    "list": "../../components/list/list",
+    "dialog": "../../components/dialog/dialog"
+  }
+}

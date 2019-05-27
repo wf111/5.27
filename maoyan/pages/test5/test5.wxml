@@ -1,0 +1,84 @@
+<!--pages/test5/test5.wxml-->
+<view class="wrapper">
+  <!-- 头部 -->
+  <view class="top">
+    <navigator url="../test4/test4" open-type="navigate">
+      <text class="fs36">{{cur}}</text>
+    </navigator>
+    <view>
+      <text class="{{flagTab==='0'?'active':''}}" bindtap='handleClick' data-key='0'>正在上映</text>
+      <text class="{{flagTab==='1'?'active':''}}" bindtap='handleClick' data-key="1">即将上映</text>
+    </view>
+    <image src="../../icons/sousuo.png"></image>
+  </view>
+  <!-- 中间内容部分 -->
+  <view class="{{flagTab==='0'?'hot':'hot none'}}">
+    <scroll-view class="sv" scroll-y bindscrolltolower="scrolltolower">
+      <!-- swiper -->
+      <swiper autoplay="false" interval="5000" duration="5000" circular="true">
+        <block wx:for="{{imgUrls}}" wx:key="{{index}}">
+          <swiper-item>
+            <image src="{{item}}" class="slide-image" />
+          </swiper-item>
+        </block>
+      </swiper>
+      <!-- 面包屑nav -->
+      <view class="nav">
+        <view class="dl">
+          <view class="dt">
+            <image src="../../icons/jiangzhang.png"></image>
+          </view>
+          <view class="dd fs30">免费看电影</view>
+        </view>
+        <view class="dl">
+          <view class="dt">
+            <image src="../../icons/wudao.png"></image>
+          </view>
+          <view class="dd fs30">签到领影券</view>
+        </view>
+        <view class="dl">
+          <view class="dt">
+            <image src="../../icons/jiangzhang.png"></image>
+          </view>
+          <view class="dd fs30">抽新年签</view>
+        </view>
+        <view class="dl">
+          <view class="dt">
+            <image src="../../icons/wudao.png"></image>
+          </view>
+          <view class="dd fs30">演唱会/话剧</view>
+        </view>
+        <view class="dl">
+          <view class="dt">
+            <image src="../../icons/jiangzhang.png"></image>
+          </view>
+          <view class="dd fs30">周围广场</view>
+        </view>
+      </view>
+      <!-- 列表渲染 -->
+      <list wx:for="{{data}}" data="{{item}}" wx:key="key" bindmyevent="myeventFlag"></list>
+    </scroll-view>
+  </view>
+  
+  <!-- 中间内容部分 -->
+
+  <view class="{{flagTab==='1'?'coming':'coming none'}}">
+  <scroll-view class="sv" scroll-y bindscrolltolower="scrolltolower">
+    <view class="love">
+      <view class="fs30" style="line-height:60rpx">近期最受期待</view>
+      <scroll-view scroll-x style="width:100%" scroll-with-animation>
+        <view class="love-con">
+          <view class="love-con-item" wx:for="{{coming}}" wx:key="index">
+            <image src="{{item.img}}"></image>
+            <view class="fs30" style="color:#000;font-weight:bold;width:180rpx;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">{{item.nm}}</view>
+            <view class="fs30">{{item.comingTitle}}</view>
+          </view>
+        </view>
+      </scroll-view>
+    </view>
+    <list wx:for="{{data}}" data="{{item}}" wx:key="key" bindmyevent="myeventFlag"></list>
+  </scroll-view>
+  </view>
+  <!-- 弹框 -->
+  <dialog wx:if="{{flagDialog}}" data="{{dialogData}}" bindevent="closeDialog"></dialog>
+</view>

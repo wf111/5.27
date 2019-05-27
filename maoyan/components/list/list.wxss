@@ -1,0 +1,49 @@
+/* components/list/list.wxss */
+
+.fs30 {
+  color: gray;
+  font-size: 25.7rpx;
+  line-height: 42rpx;
+}
+
+.list {
+  padding: 15rpx;
+  border-bottom: solid 1rpx #eee;
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+}
+
+.list image {
+  width: 150rpx;
+  height: 200rpx;
+}
+
+.list button {
+  width: 100rpx;
+  height: 60rpx;
+  font-size: 30rpx;
+  text-align: center;
+  line-height: 60rpx;
+  padding: 0;
+  margin-top: 60rpx;
+}
+
+.list button.active {
+  background: skyblue;
+}
+
+.list .middle {
+  flex: 1;
+  margin: 0 40rpx;
+}
+
+.list .middle view:nth-child(1) {
+  font-size: 35rpx;
+  font-weight: bold;
+}
+
+.list .middle text {
+  font-size: 35rpx;
+  color: orange;
+}

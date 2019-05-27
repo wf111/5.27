@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "当前城市",
+  "usingComponents": {
+    "list":"../../components/list2/list2"
+  }
+}

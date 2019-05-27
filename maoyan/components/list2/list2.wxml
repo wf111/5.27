@@ -1,0 +1,5 @@
+<!--components/list2/list2.wxml-->
+<view class="key">{{key}}</view>
+<view class="ul">
+  <view wx:for="{{data}}" wx:key="index" bindtap='handleClick'>{{item}}</view>
+</view>
