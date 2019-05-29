@@ -1,0 +1,15 @@
+<!--pages/details/details.wxml-->
+
+
+<view>
+<image src='{{obj.img}}'></image>
+</view>
+<view style='padding:0 30rpx;box-sizing: border-box'>
+<view style=' font-weight: bold'>{{obj.name}}</view>
+<view style='color:gray;font-size:30rpx'>{{obj.chineseBrief}}</view>
+<view style='font-size:60rpx; font-weight: bold;color:orange'>￥{{obj.price}}</view>
+</view>
+<view style='display:flex'>
+<button bindtap='add'>加入购物车</button><button bindtap='back'>等待购买优惠</button>
+</view>
+

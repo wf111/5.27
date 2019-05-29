@@ -1,0 +1,30 @@
+<!--pages/car/car.wxml-->
+<view>
+  <block wx:for='{{obj}}' wx:key='index'>
+    <view class='dl'>
+      <view class='dt'>
+        <image src="{{item.img}}"></image>
+      </view>
+      <view class='dd'>
+
+        <view class='top'>
+          <text class="hs">{{item.name}} </text>
+          <text>{{item.price}}</text>
+        </view>
+
+        <view class='foot'>
+          <view>
+            <button class='del'  bindtap='del' data-index='{{index}}' wx:if="{{item.tid>0}}">-</button>
+            <text  wx:if="{{item.tid>0}}">{{item.tid}}</text>
+            <button class='add' bindtap='add' data-index='{{index}}'>+</button>
+          </view>
+          <text bindtap='remove' data-index='{{index}}'>删除</text> </view>
+      </view>
+    </view>
+  </block>
+</view>
+<view class='bottom'>
+<text>共{{countIndex}}份</text>
+<text>总价：{{sumIndex}}元</text>
+<button bindtap='save'>购买</button>
+</view>

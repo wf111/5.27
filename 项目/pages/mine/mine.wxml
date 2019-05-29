@@ -1,0 +1,12 @@
+<!--pages/mine/mine.wxml-->
+<view class='section'>
+<view class='dt'>
+<image  class='image' src='../../images/a.jpg'></image>
+</view>
+<view class='center'>
+<view>昵称：猫咪</view>
+<view>姓名:张三</view>
+<view>电话：13833337998</view>
+</view>
+</view> 
+

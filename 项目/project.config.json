@@ -9,12 +9,21 @@
 		"postcss": true,
 		"minified": true,
 		"newFeature": true,
-		"autoAudits": false
+		"coverView": true,
+		"autoAudits": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		}
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.5.2",
-	"appid": "wx6dce2e14a093538c",
-	"projectname": "wechat",
+	"libVersion": "2.7.0",
+	"appid": "wx5dc2f1f64edd6c1a",
+	"projectname": "%E9%A1%B9%E7%9B%AE",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},

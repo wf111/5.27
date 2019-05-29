@@ -1,0 +1,28 @@
+/* pages/sy/sy.wxss */
+page{
+  width: 100%;
+  height: 100%;
+}
+swiper{
+  width: 100%;
+  height: 100%;
+}
+.img{
+ width: 100%;
+  height: 100%;
+  margin-bottom: 30rpx;
+  color: #eee;
+  text-align: center;
+  line-height:1000rpx;
+  font-size: 70rpx;
+}
+/* .img1{
+  width: 100%;
+  height: 600rpx;
+  background:url('http://img0.imgtn.bdimg.com/it/u=2605627356,43911654&fm=26&gp=0.jpg');
+  background-size: 100% 100%;
+  color: #fff;
+  text-align: center;
+  line-height: 600rpx;
+  font-size: 70rpx;
+} */
