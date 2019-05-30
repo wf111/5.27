@@ -10,7 +10,7 @@ swiper{
 .img{
  width: 100%;
   height: 100%;
-  margin-bottom: 30rpx;
+  /* margin-bottom: 30rpx; */
   color: #eee;
   text-align: center;
   line-height:1000rpx;

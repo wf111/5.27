@@ -16,7 +16,11 @@ Page({
         img: 'https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=511146899,2656947388&fm=26&gp=0.jpg'
       }]
   },
-
+btn:function(){
+  wx.switchTab({
+    url: '/pages/cake/cake',
+  })
+},
   /**
    * 生命周期函数--监听页面加载
    */

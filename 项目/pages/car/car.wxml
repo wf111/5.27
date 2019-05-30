@@ -26,5 +26,12 @@
 <view class='bottom'>
 <text>共{{countIndex}}份</text>
 <text>总价：{{sumIndex}}元</text>
-<button bindtap='save'>购买</button>
+<button bindtap='save' class='save'>购买</button>
+</view>
+<view class='mask {{flag?"active":"none"}}' >
+<view class='top1'>扫码支付</view>
+<view class='ewm1'>
+ <image src='../../images/ewm.png'></image>
+</view>
+<button class='xq' bindtap='xq'>查看详情</button>
 </view>

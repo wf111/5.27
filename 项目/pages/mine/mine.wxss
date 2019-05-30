@@ -2,28 +2,37 @@
 page{
 
   width: 100%;
-  background: url('http://img2.imgtn.bdimg.com/it/u=1565391608,3641459074&fm=26&gp=0.jpg');
-  background-size: 100% 100%;
+  /* background: url('http://img2.imgtn.bdimg.com/it/u=1565391608,3641459074&fm=26&gp=0.jpg');
+  background-size: 100% 100%; */
+  background: #eee;
 }
 .section{
   width: 100%;
   
 }
+.li{
+ display: flex;
+}
 .dt{
- width:  40%;
- height: 300rpx;
-  margin: 100rpx auto;
+ width:  25%;
+ height: 180rpx;
+  margin: 50rpx auto;
     border-radius: 50%;
 }
 .image{
   width: 100%;
   height: 100%;
- border-radius: 50%;
+ border-radius: 30rpx;
 }
 .center{
-  width: 50%;
-  margin:0 auto;
+ width: 60%;
+
 }
-button{
-   margin: 100rpx auto;
+.lis{
+  padding:20rpx;
+  box-sizing: border-box;
+  background: #fff;
+  margin: 20rpx 0;
+  display: flex;
+  align-items: center;
 }

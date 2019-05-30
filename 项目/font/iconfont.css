@@ -1,13 +1,3 @@
-/**app.wxss**/
-.container {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  padding: 200rpx 0;
-  box-sizing: border-box;
-} 
 
 @font-face {font-family: "iconfont";
   src: url('iconfont.eot?t=1535943585533'); /* IE9*/
@@ -508,19 +498,4 @@
 .icon-daohangdizhi:before { content: "\e660"; }
 
 .icon-jubao:before { content: "\e661"; }
-.coupons.icon-coupons{
-  font-size: 70rpx;
-  margin-right: 20rpx;
-}
-.task.icon-task{
-font-size: 70rpx;
-margin-right: 20rpx;
-}
-.time.icon-time{
-font-size: 70rpx;
-margin-right: 20rpx;
-}
-.setup.icon-setup{
-font-size: 70rpx;
-margin-right: 20rpx;
-}
+

@@ -1,7 +1,7 @@
 <!--pages/add/add.wxml-->
 <view class='mar'>购买成功!</view>
 <view class='top'>
-热门商品
+热销商品
 </view>
 <view class='section'>
     <block wx:for='{{list}}' wx:key='index'>
